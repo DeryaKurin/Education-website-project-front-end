@@ -1,0 +1,481 @@
+html {
+  font-size: 16px;
+}
+
+
+/* Header */
+
+
+/* Fixed Top Header */
+
+header {
+  color: #ffffff;
+  background-color: #206993;
+  height: 27rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.left-menu,
+.right-menu,
+.phone,
+.top-menu,
+.menu-container,
+.bottom-menu,
+.main-menu,
+.company,
+.mini-flex,
+.flex-column-behind,
+.flex-column-front {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-menu,
+.menu-container,
+.bottom-menu,
+.main-menu,
+.flex-column-behind,
+.flex-column-front {
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  margin-bottom: 5rem;
+}
+
+.top-menu {
+  align-items: center;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-container {
+  align-items: center;
+  padding: .5rem 0 .5rem;
+}
+
+.left-menu a {
+  font-weight: 100;
+  font-size: .8rem;
+}
+
+.left-menu p {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.phone {
+  padding-left: 1.2rem;
+}
+
+.phone img {
+  margin-right: -.8rem;
+}
+
+.number p {
+  font-size: .8rem;
+}
+
+.top-menu,
+btn {
+  font-size: .8rem;
+}
+
+#area-code {
+  font-size: .5rem;
+}
+
+.btn {
+  border-radius: 44px;
+  font-size: .7rem;
+  padding: 6px 18px;
+  margin-right: .6rem;
+}
+
+#white-btn {
+  border-radius: 20px;
+  color: rgb(157, 224, 109);
+}
+
+.green-btn {
+  background-color: rgb(157, 224, 109);
+  color: white;
+}
+
+.bottom-menu {
+  align-items: flex-start;
+}
+
+#main-menu {
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+#main-menu img {
+  margin-bottom: -2px;
+  height: 12px;
+}
+
+.company {
+  align-content: flex-end;
+}
+
+.company-name p {
+  font-size: 1.4rem;
+  padding-left: 3px;
+}
+
+.company-name .bottom-line {
+  color: rgb(157, 224, 109);
+  text-align: right;
+  font-size: .7rem;
+}
+
+
+.language-dropdown {
+  margin: .4rem 0 0 .4rem;
+  color: black;
+}
+
+.language-dropdown select {
+    color: #ffffff;
+    padding-top: 2px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("images/arrow-down-sign-to-navigate.png");
+}
+
+
+/* Fixed Top Header ends here*/
+
+.flex-column-behind {
+  position: absolute;
+  z-index: 1;
+}
+
+.flex-column-front {
+  position: relative;
+  z-index: 1010;
+}
+
+.header-info h3 {
+  font-size: 1.4rem;
+}
+
+.header-info p {
+  margin: .8rem 0 .8rem;
+  max-width: 80%;
+  font-weight: lighter;
+}
+
+.header-info .green-btn {
+  font-size: .9rem;
+  padding: .4rem 2rem .4rem;
+}
+
+
+
+/* Main Dropdown menu */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: -4.4rem;
+  right: -16vw;
+  /* background-color: rgba(52, 55, 56, .9); */
+	background-color: rgba(32, 32, 32, .9);
+  z-index: 1001;
+}
+
+.dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 4% 0 8% 15%;
+  padding-left: 15px;
+}
+
+.dropdown-title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  color: rgb(157, 224, 109);
+}
+
+.dropdown-title img {
+  padding-right: 2px;
+}
+
+.dropdown-column a {
+	padding: 0 0 2vh 4px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(157, 224, 109);
+}
+
+.dropdown-content a {
+  color: white;
+  display: block;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 4rem 0px 0px;
+  width: 24vw;
+}
+
+
+
+
+/* Mini Dropdown menu  */
+
+#mini-menu {
+  right: 0;
+  top: 1rem;
+}
+
+.mini-flex {
+  justify-content: space-between;
+  margin: 1.4rem 2.4rem .8rem;
+}
+
+#mini-menu a {
+  padding-bottom: .8rem;
+}
+
+.right-minimenu {
+  margin-left: 1.2rem;
+}
+
+.flex-menu p,
+.header-info p {
+  line-height: 1.2;
+}
+
+
+
+
+
+/* Supportive Section */
+
+
+.supportive {
+  padding: 2rem 15px 1rem 15px;
+}
+
+.mid-title {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.mid-title img {
+  margin-top: .4rem;
+}
+
+.mid-title h4 {
+  font-size: 1.2rem;
+}
+
+.flex-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0 2rem;
+}
+
+.flex-menu h4 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.flex-menu .green-btn {
+  font-size: .9rem;
+  padding: .3rem 3rem;
+  margin-top: 2rem;
+}
+
+/* Jumbotron Section  */
+
+.jumbotron {
+  padding: 2rem 0;
+}
+.flex-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.jumbotron-img {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.jumbotron-img p {
+  font-size: .8rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+/* Footer Section */
+
+
+footer {
+	height: auto;
+	color: #ffffff;
+  background-color: #206993;
+  padding: 2.4rem 15px 2.4rem 15px;
+}
+
+footer .company-name .bottom-line {
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content {
+  justify-content: space-between;
+}
+
+.footer-content .company-name {
+  margin-top: -.2rem;
+  margin-bottom: .6rem;
+}
+
+.footer-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content span,
+.footer-content a,
+#copyright {
+  font-size: .8rem;
+  /* lighter calismiyor
+  font-weight: lighter; */
+}
+
+.footer-content a:hover {
+  color: rgb(157, 224, 109);
+}
+
+.first-column img {
+  padding-right: .3rem;
+  margin-bottom: -.14rem;
+}
+
+ #white-button {
+  color: #185372;
+  border-radius: 44px;
+  font-size: .7rem;
+  padding: 6px 18px;
+  margin-left: 1.2rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+}
+
+.footer-info {
+  padding: .2rem 0 .2rem 0;
+  align-items: baseline;
+  line-height: 1.2;
+}
+
+#hours {
+  display: flex;
+}
+
+.offices {
+  margin-top: 1.4rem;
+}
+
+.small-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-column h5 {
+  padding-bottom: .6rem;
+}
+.small-column ul li {
+  padding-top: .6rem;
+  font-weight: 100;
+}
+
+.small-column ul {
+  margin-top: .4rem;
+}
+
+#footer-seperator {
+  border-right: 1px solid rgba(255, 255, 255, .4);
+}
+
+.footer-line {
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.footer-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-media {
+  margin-top: .4rem;
+}
+
+.social-media a {
+  padding-right: .8rem;
+}
+
+/* Carousel Section */
+
+.supportive h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Student Reviews */
+
+
+.student-img {
+  width: 16%;
+  text-align: center;
+  margin: 2rem 0 4rem;
+}
+
+.student-review span {
+  padding-bottom: 1rem;
+}
