@@ -231,7 +231,6 @@ btn {
   line-height: 1.2;
 }
 
-
 /* Banner Section */
 
 .banner {
@@ -246,73 +245,64 @@ btn {
   line-height: 1.2;
 }
 
-.banner p,
-.banner h4 {
+.banner h2 {
   padding-left: 15px;
+	font-size: 1.6rem;
+  font-weight: 700;
 }
 
 #page-tag {
   font-size: .8rem;
-  /* font-weight: 300; */
   padding: 2rem 15px 2rem;
 }
 
-.banner h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+/* Body Container Section */
+
+.body-text {
+	margin: 2rem 0;
+}
+.body-text h3 {
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding-top: 2rem;
 }
 
-.banner p {
-  font-size: 1rem;
-  line-height: 1.2;
-  padding-top: .8rem;
+.body-text img {
+	margin-top: -.4rem;
 }
 
-
-/* Contact-Info Section */
-
-.flex-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 4rem 0 2rem;
+.body-text p {
+	line-height: 1.6;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 4rem;
-  align-items: center;
+.body-text h4 {
+	font-size: 1.2rem;
+	font-weight: 600;
+  margin-top: 5rem;
 }
 
-.contact {
-  padding-bottom: 1rem;
+/* Flex-Container Section */
+
+.flex-container {
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
 }
 
-.contact img {
-  margin-bottom: -.1rem;
-  margin-right: .4rem;
+.body-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 1rem;
 }
 
-.contact-info {
-  margin-right: 2rem;
-  line-height: 1.6;
+.body-row img {
+	margin-top: .2rem;
 }
 
-.contact-info h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+.row-title {
+	font-weight: 600;
 }
-
-.contact-info img {
-  margin-top: -.6rem;
-}
-
-#days {
-  margin-top: -.8rem;
-}
-
 
 /* Footer Section */
 

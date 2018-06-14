@@ -345,6 +345,19 @@ btn {
   margin-top: 2rem;
 }
 
+/* Student Reviews */
+
+.student-img {
+  width: 16%;
+  text-align: center;
+  margin: 2rem 0 4rem;
+}
+
+.student-review p {
+  padding-top: .4rem;
+  line-height: 1.2;
+}
+
 
 /* Jumbotron Section  */
 
@@ -359,10 +372,6 @@ btn {
   justify-content: space-between;
 }
 
-.student-review p {
-  line-height: 1.2;
-}
-
 .jumbotron-img {
   text-align: center;
   line-height: 1.2;
@@ -374,7 +383,7 @@ btn {
 }
 
 
-/* Select / Search Section */
+/* Form Section */
 
 form {
   display: flex;
@@ -560,17 +569,4 @@ footer .company-name .bottom-line {
 .supportive h3 {
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-
-/* Student Reviews */
-
-.student-img {
-  width: 16%;
-  text-align: center;
-  margin: 2rem 0 4rem;
-}
-
-.student-review p {
-  padding-top: .4rem;
 }
