@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -12,6 +13,7 @@ header {
   color: #ffffff;
   background-color: #206993;
   height: 27rem;
+  font-weight: 600;
 }
 
 a {
@@ -21,6 +23,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: rgb(157, 224, 109);
 }
 
 .left-menu,
@@ -50,15 +53,14 @@ a:hover {
 .flex-row {
   display: flex;
   flex-direction: column;
-}
-
-.flex-row {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  z-index: 1001;
+  position: relative;
 }
 
 .top-menu {
   align-items: center;
-  font-size: 1rem;
+  font-size: .8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -111,6 +113,10 @@ btn {
   color: rgb(157, 224, 109);
 }
 
+#white-btn:hover {
+  color: #000000;
+}
+
 .green-btn {
   background-color: rgb(157, 224, 109);
   color: white;
@@ -152,23 +158,30 @@ btn {
 }
 
 .language-dropdown select {
-    color: #ffffff;
-    padding-top: 2px;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url("images/arrow-down-sign-to-navigate.png");
+  color: #ffffff;
+  padding-top: 2px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
 }
 
-
+.language-dropdown select::after {
+  background: url(images/arrow-down-sign-to-navigate.png);
+}
 /* Fixed Top Header ends here*/
+
+.flex-column {
+  position: relative;
+  z-index: 1000;
+}
 
 .flex-column-behind {
   position: absolute;
-  z-index: 1;
+  z-index: 1001;
 }
 
 .flex-column-front {
@@ -192,7 +205,6 @@ btn {
 }
 
 
-
 /* Main Dropdown menu */
 
 .dropdown-content {
@@ -200,8 +212,7 @@ btn {
   position: absolute;
   top: -4.4rem;
   right: -16vw;
-  /* background-color: rgba(52, 55, 56, .9); */
-	background-color: rgba(32, 32, 32, .9);
+  background-color: rgba(32, 32, 32, .9);
   z-index: 1001;
 }
 
@@ -227,7 +238,8 @@ btn {
 }
 
 .dropdown-column a {
-	padding: 0 0 2vh 4px;
+  padding: 0 0 2vh 4px;
+  font-weight: 300;
 }
 
 .dropdown:hover .dropdown-content {
@@ -246,31 +258,44 @@ btn {
 .dropdown-column {
   display: flex;
   flex-direction: column;
-  margin: 0px 4rem 0px 0px;
-  width: 24vw;
+  margin: 0px 1.2rem 0px 0px;
+  width: 36vw;
 }
-
-
 
 
 /* Mini Dropdown menu  */
 
 #mini-menu {
-  right: 0;
-  top: 1rem;
+  left: -9vw;
+  top: -1rem;
 }
 
 .mini-flex {
-  justify-content: space-between;
-  margin: 1.4rem 2.4rem .8rem;
+  justify-content: space-around;
+  margin: 2rem 2.4rem 1.4rem;
 }
 
 #mini-menu a {
   padding-bottom: .8rem;
 }
 
-.right-minimenu {
-  margin-left: 1.2rem;
+.left-minimenu {
+  margin: 0 2rem 0px 1.4rem;
+}
+
+.right-minimenu a {
+  font-size: .8rem;
+}
+
+.left-minimenu a {
+  font-size: .9rem;
+}
+
+.right-minimenu p {
+  font-size: .9rem;
+  color: rgb(157, 224, 109);
+  padding-bottom: .6rem;
+  margin-left: -1rem;
 }
 
 .flex-menu p,
@@ -279,11 +304,7 @@ btn {
 }
 
 
-
-
-
 /* Supportive Section */
-
 
 .supportive {
   padding: 2rem 15px 1rem 15px;
@@ -295,7 +316,7 @@ btn {
 }
 
 .mid-title img {
-  margin-top: .4rem;
+  margin-top: .6rem;
 }
 
 .mid-title h4 {
@@ -309,6 +330,10 @@ btn {
   padding: 1rem 0 2rem;
 }
 
+.flex-menu p {
+  line-height: 1.2;
+}
+
 .flex-menu h4 {
   font-size: 1.2rem;
   padding-bottom: 1rem;
@@ -320,15 +345,22 @@ btn {
   margin-top: 2rem;
 }
 
+
 /* Jumbotron Section  */
 
 .jumbotron {
   padding: 2rem 0;
+  background-color: #F7F7F7;
 }
+
 .flex-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.student-review p {
+  line-height: 1.2;
 }
 
 .jumbotron-img {
@@ -342,16 +374,76 @@ btn {
 }
 
 
+/* Select / Search Section */
 
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
+form select {
+  font-size: .8rem;
+  font-weight: bold;
+  border-radius: 4rem;
+  padding: .5rem .6rem;
+  margin-top: 2rem;
+  width: 14vw;
+  background: #f7f4f4;
+  border-color: #cecece;
+  text-align: center;
+  appearance: button-arrow-down;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* background-image: url("images/arrow-down-sign-to-navigate.png"); */
+}
 
+form .green-btn {
+  font-size: .8rem;
+  font-weight: bold;
+  width: 14vw;
+  text-align: center;
+  padding: .2rem auto;
+}
+
+.university-banner {
+  height: 12rem;
+  color: #ffffff;
+  background-color: #0063B1;
+  border-radius: .6rem;
+  margin: 4rem 0;
+}
+
+.university-banner img {
+  position: relative;
+  top: 2rem;
+  left: 56vw;
+}
+
+.banner-text {
+  text-align: left;
+  width: 30%;
+  margin-left: 20vw;
+}
+
+.banner-text p {
+  font-weight: 400;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: .2rem;
+}
+
+.banner-text h2 {
+  padding-top: .4rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 
 /* Footer Section */
 
-
 footer {
-	height: auto;
-	color: #ffffff;
+  height: auto;
+  color: #ffffff;
   background-color: #206993;
   padding: 2.4rem 15px 2.4rem 15px;
 }
@@ -396,7 +488,7 @@ footer .company-name .bottom-line {
   margin-bottom: -.14rem;
 }
 
- #white-button {
+#white-button {
   color: #185372;
   border-radius: 44px;
   font-size: .7rem;
@@ -428,6 +520,7 @@ footer .company-name .bottom-line {
 .small-column h5 {
   padding-bottom: .6rem;
 }
+
 .small-column ul li {
   padding-top: .6rem;
   font-weight: 100;
@@ -444,6 +537,7 @@ footer .company-name .bottom-line {
 .footer-line {
   justify-content: space-between;
   padding-top: 1rem;
+  align-items: baseline;
 }
 
 .footer-line {
@@ -460,6 +554,7 @@ footer .company-name .bottom-line {
   padding-right: .8rem;
 }
 
+
 /* Carousel Section */
 
 .supportive h3 {
@@ -467,8 +562,8 @@ footer .company-name .bottom-line {
   font-weight: bold;
 }
 
-/* Student Reviews */
 
+/* Student Reviews */
 
 .student-img {
   width: 16%;
@@ -476,6 +571,6 @@ footer .company-name .bottom-line {
   margin: 2rem 0 4rem;
 }
 
-.student-review span {
-  padding-bottom: 1rem;
+.student-review p {
+  padding-top: .4rem;
 }
