@@ -26,6 +26,11 @@ a:hover {
   color: rgb(157, 224, 109);
 }
 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .left-menu,
 .right-menu,
 .phone,
