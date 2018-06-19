@@ -243,6 +243,7 @@ btn {
   background-color: #206993;
   height: 18rem;
   padding-left: 15%;
+  margin-left: 15px;
 }
 
 .banner-text {
@@ -250,46 +251,67 @@ btn {
   line-height: 1.2;
 }
 
+.banner-text p {
+  font-size: 1.4rem;
+}
+
+
 .banner h2 {
-  padding-left: 15px;
 	font-size: 1.6rem;
   font-weight: 700;
+  padding-bottom: .8rem;
 }
 
 #page-tag {
   font-size: .8rem;
-  padding: 2rem 15px 2rem;
+  padding: 2rem 0 2rem;
 }
 
 /* Body Container Section */
 
 .body-text {
-	margin: 2rem 0;
+	margin-top: 2rem;
 }
+
+.body-text a {
+  color: #000000;
+  text-decoration: underline;
+}
+
 .body-text h3 {
 	font-size: 1.4rem;
 	font-weight: 600;
-	padding-top: 2rem;
+	margin-top: 3rem;
+  color: rgb(157, 224, 109);
 }
 
-.body-text img {
-	margin-top: -.4rem;
+#our-services {
+  margin-top: 1rem;
 }
 
 .body-text p {
 	line-height: 1.6;
+  padding-bottom: 1rem;
 }
 
-.body-text h4 {
-	font-size: 1.2rem;
-	font-weight: 600;
-  margin-top: 5rem;
+.body-text ul {
+  margin: 1rem 0 6rem;
 }
+
+.body-text ul li {
+  padding-bottom: .8rem;
+}
+
+.body-text ul li a {
+  text-decoration: none;
+  padding-left: .8rem;
+}
+
 
 /* Flex-Container Section */
 
 .flex-container {
-	margin: 3rem 0;
+	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -298,16 +320,23 @@ btn {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 1rem;
+	margin: 1rem 0 1.8rem;
+  line-height: 1.2;
 }
 
 .body-row img {
 	margin-top: .2rem;
+  margin-right: 1rem;
 }
 
 .row-title {
-	font-weight: 600;
+  padding-bottom: .8rem;
 }
+
+.row-title .title {
+  font-size: .8rem;
+}
+
 
 /* Footer Section */
 
