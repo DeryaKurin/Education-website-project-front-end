@@ -315,6 +315,10 @@ btn {
   padding: 2rem 15px 1rem 15px;
 }
 
+.supportive h3 {
+  padding-bottom: 2rem;
+}
+
 .mid-title {
   text-align: center;
   padding: 2rem 0 1rem;
@@ -350,6 +354,26 @@ btn {
   margin-top: 2rem;
 }
 
+/* Carousel Section */
+
+.slide-item  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carousel-inner img {
+  width: 16vw;
+}
+
+/* ol.carousel-indicators {
+  margin-top: 2rem;
+  left: 0;
+  color: black;
+
+} */
+
+ 
 /* Student Reviews */
 
 .student-img {
