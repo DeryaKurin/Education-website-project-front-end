@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -100,12 +100,13 @@ btn {
 
 #area-code {
   font-size: .5rem;
+  padding-bottom: 1px;
 }
 
 .btn {
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: 1vh 2vw;
   margin-right: .6rem;
 }
 
@@ -159,7 +160,6 @@ btn {
 
 .language-dropdown {
   margin: .4rem 0 0 .4rem;
-  color: black;
 }
 
 .language-dropdown select {
@@ -366,7 +366,7 @@ footer .company-name .bottom-line {
   color: #185372;
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: .6vh 2vw;
   margin-left: 1.2rem;
   margin-top: 2rem;
   background-color: #ffffff;
@@ -392,7 +392,7 @@ footer .company-name .bottom-line {
 }
 
 .small-column h5 {
-  padding-bottom: .6rem;
+  padding-bottom: 1vh;
 }
 
 .small-column ul li {
@@ -422,4 +422,36 @@ footer .company-name .bottom-line {
 
 .social-media a {
   padding-right: .8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+  .phone img,
+  .main-menu img {
+    height: 2.8vh;
+    margin-top: -.2rem;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .phone img,
+  .main-menu img {
+    height: 2vh;
+    margin-top: -.2rem;
+  }
+
+  .body-text img {
+    width: 3vw;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .phone img,
+  .main-menu img {
+    height: 1.6vh;
+    margin-top: -.2rem;
+  }
+
+  .body-text img {
+    width: 2vw;
+  }
 }

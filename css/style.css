@@ -1,5 +1,6 @@
 html {
-  font-size: 16px;
+
+  font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -104,12 +105,13 @@ btn {
 
 #area-code {
   font-size: .5rem;
+  padding-bottom: 1px;
 }
 
 .btn {
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: 1vh 2vw;
   margin-right: .6rem;
 }
 
@@ -229,6 +231,11 @@ btn {
   width: 80vw;
   margin: 4% 0 8% 15%;
   padding-left: 15px;
+}
+
+img.dropbtn {
+  max-width: 27px;
+  min-width: 8px;
 }
 
 .dropdown-title {
@@ -364,6 +371,7 @@ btn {
 
 .carousel-inner img {
   width: 16vw;
+
 }
 
 /* ol.carousel-indicators {
@@ -373,7 +381,7 @@ btn {
 
 } */
 
- 
+
 /* Student Reviews */
 
 .student-img {
@@ -455,8 +463,8 @@ form .green-btn {
 
 .university-banner img {
   position: relative;
-  top: 2rem;
-  left: 56vw;
+  top: 2vh;
+  left: 52vw;
 }
 
 .banner-text {
@@ -530,7 +538,7 @@ footer .company-name .bottom-line {
   color: #185372;
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: .6vh 2vw;
   margin-left: 1.2rem;
   margin-top: 2rem;
   background-color: #ffffff;
@@ -556,7 +564,7 @@ footer .company-name .bottom-line {
 }
 
 .small-column h5 {
-  padding-bottom: .6rem;
+  padding-bottom: 1vh;
 }
 
 .small-column ul li {
@@ -598,4 +606,64 @@ footer .company-name .bottom-line {
 .supportive h3 {
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+  .phone img,
+  .main-menu img {
+    height: 2.8vh;
+    margin-top: -.2rem;
+  }
+
+  .flex-menu img {
+    height: 44vh;
+  }
+
+  .slide-item img {
+    height: 46vh;
+  }
+
+  .student-review img {
+    width: 3vw;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .phone img,
+  .main-menu img {
+    height: 2vh;
+    margin-top: -.2rem;
+  }
+
+  .flex-menu img {
+    height: 30vh;
+  }
+
+  .slide-item img {
+    height: 34vh;
+  }
+
+  .student-review img {
+    width: 3vw;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .phone img,
+  .main-menu img {
+    height: 1.6vh;
+    margin-top: -.2rem;
+  }
+
+  .flex-menu img {
+    height: 26vh;
+  }
+
+  .slide-item img {
+    height: 26vh;
+  }
+
+  .student-review img {
+    width: 2vw;
+  }
 }

@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -100,12 +100,13 @@ btn {
 
 #area-code {
   font-size: .5rem;
+  padding-bottom: 1px;
 }
 
 .btn {
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: 1vh 2vw;
   margin-right: .6rem;
 }
 
@@ -159,11 +160,9 @@ btn {
 
 .language-dropdown {
   margin: .4rem 0 0 .4rem;
-  color: black;
 }
 
 .language-dropdown select {
-  color: #ffffff;
   padding-top: 2px;
   border: none;
   box-shadow: none;
@@ -258,7 +257,6 @@ btn {
 
 #page-tag {
   font-size: .8rem;
-  /* font-weight: 300; */
   padding: 2rem 15px 2rem;
 }
 
@@ -287,7 +285,7 @@ btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   align-items: center;
 }
 
@@ -376,7 +374,7 @@ footer .company-name .bottom-line {
   color: #185372;
   border-radius: 44px;
   font-size: .7rem;
-  padding: 6px 18px;
+  padding: .6vh 2vw;
   margin-left: 1.2rem;
   margin-top: 2rem;
   background-color: #ffffff;
@@ -402,7 +400,7 @@ footer .company-name .bottom-line {
 }
 
 .small-column h5 {
-  padding-bottom: .6rem;
+  padding-bottom: 1vh;
 }
 
 .small-column ul li {
@@ -432,4 +430,53 @@ footer .company-name .bottom-line {
 
 .social-media a {
   padding-right: .8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+  .phone img,
+  .main-menu img {
+      height: 2.8vh;
+      margin-top: -.2rem;
+  }
+
+  iframe {
+    height: 56vh;
+  }
+
+  .contact-info img {
+    width: 3vw;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .phone img,
+  .main-menu img {
+    height: 2vh;
+    margin-top: -.2rem;
+  }
+
+  iframe {
+    height: 44vh;
+  }
+
+  .contact-info img {
+    width: 3vw;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .phone img,
+  .main-menu img {
+    height: 1.6vh;
+    margin-top: -.2rem;
+  }
+
+  iframe {
+    height: 30vh;
+    width: 40vw;
+  }
+
+  .contact-info img {
+    width: 2vw;
+  }
 }
