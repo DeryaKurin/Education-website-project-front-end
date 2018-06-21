@@ -1,5 +1,4 @@
 html {
-
   font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
 }
@@ -111,6 +110,7 @@ btn {
 .btn {
   border-radius: 44px;
   font-size: .7rem;
+  font-weight: bolder;
   padding: 1vh 2vw;
   margin-right: .6rem;
 }
@@ -151,6 +151,11 @@ btn {
   font-size: 1.4rem;
   padding-left: 3px;
 }
+
+/* Levant Education company name will be styled
+.company-name p:first-child {
+
+} */
 
 .company-name .bottom-line {
   color: rgb(157, 224, 109);
@@ -217,10 +222,11 @@ btn {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: -4.4rem;
+  top: -5.8rem;
   right: -16vw;
-  background-color: rgba(32, 32, 32, .9);
+  background-color: rgba(33, 37, 41, .9);
   z-index: 1001;
+  height: 140vh;
 }
 
 .dropdown-container {
@@ -233,15 +239,15 @@ btn {
   padding-left: 15px;
 }
 
-img.dropbtn {
-  max-width: 27px;
-  min-width: 8px;
+.dropbtn img {
+  max-width: 1.6vw;
 }
 
 .dropdown-title {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  margin-left: -.2rem;
   color: rgb(157, 224, 109);
 }
 
@@ -271,20 +277,21 @@ img.dropbtn {
   display: flex;
   flex-direction: column;
   margin: 0px 1.2rem 0px 0px;
-  width: 36vw;
+  width: 34vw;
 }
 
 
 /* Mini Dropdown menu  */
 
 #mini-menu {
-  left: -9vw;
-  top: -1rem;
+  left: -12vw;
+  top: -1.4rem;
+  height: auto;
 }
 
 .mini-flex {
   justify-content: space-around;
-  margin: 2rem 2.4rem 1.4rem;
+  margin: 2.8rem 2.4rem 2rem;
 }
 
 #mini-menu a {
@@ -292,7 +299,7 @@ img.dropbtn {
 }
 
 .left-minimenu {
-  margin: 0 2rem 0px 1.4rem;
+  margin: 0 1.6rem 0px 2rem;
 }
 
 .right-minimenu a {
@@ -449,6 +456,7 @@ form .green-btn {
   font-size: .8rem;
   font-weight: bold;
   width: 14vw;
+  vertical-align: middle;
   text-align: center;
   padding: .2rem auto;
 }
@@ -538,7 +546,8 @@ footer .company-name .bottom-line {
   color: #185372;
   border-radius: 44px;
   font-size: .7rem;
-  padding: .6vh 2vw;
+  font-weight: bolder;
+  padding: 1vh 2vw;
   margin-left: 1.2rem;
   margin-top: 2rem;
   background-color: #ffffff;
@@ -643,6 +652,11 @@ footer .company-name .bottom-line {
     height: 34vh;
   }
 
+  .btn,
+  #white-button {
+    padding: .8vh 2vw;
+  }
+
   .student-review img {
     width: 3vw;
   }
@@ -665,5 +679,10 @@ footer .company-name .bottom-line {
 
   .student-review img {
     width: 2vw;
+  }
+
+  .btn,
+  #white-button {
+    padding: .6vh 2vw;
   }
 }
